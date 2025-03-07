@@ -9,11 +9,12 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 90%; /* Increased width for better readability */
+    max-width: 1200px; /* Limit max width for better layout */
     margin: auto;
     overflow: hidden;
     padding: 20px;
-    text-align: left; /* Align content to the left */
+    text-align: center; /* Center-align text for better layout */
 }
 
 header {
@@ -23,13 +24,19 @@ header {
     padding-top: 80px;
     text-align: center;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .logo {
     width: 120px; /* Adjust size to be smaller */
-    position: absolute;
-    top: 10px;
-    left: 10px;
+    position: relative;
+    top: auto;
+    left: auto;
+    margin-left: 20px;
 }
 
 .header-container {
@@ -56,7 +63,7 @@ nav {
 nav a {
     color: #8B5E3C; /* Golden brown accent */
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 20px;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
 }
@@ -66,17 +73,20 @@ nav a:hover {
 }
 
 section {
-    padding: 40px 0;
-    text-align: left; /* Align text left */
+    padding: 40px 5%;
+    text-align: center; /* Centering text for a more balanced look */
     background: #f4f4f4; /* Light gray section background */
     margin: 20px 0;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensures responsive layout */
 }
 
 .image-container {
-    width: 50%;
+    width: 45%;
     padding-right: 20px;
 }
 
@@ -87,6 +97,7 @@ section {
 
 .text-container {
     width: 50%;
+    text-align: left;
 }
 
 h1, h2 {
@@ -106,6 +117,12 @@ footer {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+section {
+    animation: fadeIn 1s ease-in-out;
+}
+
+
 
 section {
     animation: fadeIn 1s ease-in-out;
