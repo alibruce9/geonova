@@ -1,5 +1,3 @@
-/* style.css - Minimalist Futuristic Theme for GeoNova Imaging Technologies */
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -9,12 +7,12 @@ body {
 }
 
 .container {
-    width: 90%; /* Increased width for better readability */
-    max-width: 1200px; /* Limit max width for better layout */
+    width: 100%; /* Full width for consistency */
+    max-width: 1200px; /* Limit max width for readability */
     margin: auto;
     overflow: hidden;
     padding: 20px;
-    text-align: center; /* Center-align text for better layout */
+    text-align: left; /* Consistent left alignment */
 }
 
 header {
@@ -24,19 +22,14 @@ header {
     padding-top: 80px;
     text-align: center;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: auto;
+    width: 100%;
 }
 
 .logo {
     width: 120px; /* Adjust size to be smaller */
-    position: relative;
-    top: auto;
-    left: auto;
-    margin-left: 20px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
 .header-container {
@@ -74,14 +67,14 @@ nav a:hover {
 
 section {
     padding: 40px 5%;
-    text-align: center; /* Centering text for a more balanced look */
+    text-align: left; /* Left alignment for consistency */
     background: #f4f4f4; /* Light gray section background */
     margin: 20px 0;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* Left align content */
     flex-wrap: wrap; /* Ensures responsive layout */
 }
 
@@ -111,6 +104,7 @@ footer {
     text-align: center;
     padding: 20px 0;
     margin-top: 20px;
+    width: 100%;
 }
 
 @keyframes fadeIn {
@@ -123,7 +117,3 @@ section {
 }
 
 
-
-section {
-    animation: fadeIn 1s ease-in-out;
-}
